@@ -17,7 +17,7 @@
 
         <header>
             <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top" id="navbar">
-                <div class="container col-4">
+                <div class="container-fluid col-3">
                     <div class="row">
                         <div>
                             <ul class="navbar-nav nav-pills">
@@ -152,6 +152,7 @@
 </div>
 
         <!--- ABOUT ME -->
+        <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
         <section class="about-me text-center py-5" id="scrollspyHeading2">
             <div class="top-about">
                 <h1>About me</h1>
@@ -222,11 +223,12 @@
                         <input id="email" name="e-mail" type="email" placeholder="E mail address" class="form-control" aria-describedby="emailHelp">
                         <label id="message-label" class="form-label">Message</label>
                         <textarea id="message" name="message" class="form-control">Typing something</textarea>
-                        <button id="touch-btn" class="btn btn-primary mt-3" type="submit">Get in touch</button>
+                        <button id="touch-btn" class="btn btn-primary mt-3" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Get in touch</button>
                     </form>
                 </div>
             </div>
         </section>
+
 
         <!--- LINKS -->
         <section>
@@ -239,7 +241,28 @@
                     <li class="list-inline-item"><a href=#"><img src="./images/M.png" alt="M icon"></a></li>
                 </ul>  
             </div>    
+            
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+    </div>
     </div>
     </div>
 </body>
